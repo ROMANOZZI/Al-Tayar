@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=IBM+Plex+Sans+Arabic:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --font1: "IBM Plex Sans Arabic", sans-serif;
+  --blue: #0c68be;
+  --grey: #3b3b3b13;
+  --darkBlue: #192a3e;
+}
+#root,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.Nav-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-family: var(--font1);
+  border-bottom: 10px solid var(--grey);
+}
+.Logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 5em 0em 0;
+}
+.Logo {
+  width: 100px;
+}
+.Logo-text {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.Nav-links {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.75rem;
+  color: #333333a8;
+  margin: auto;
+  cursor: pointer;
+
+  align-items: center;
+}
+.Nav-link {
+  margin: 1em;
+}
+.Nav-selected {
+  color: #0c68be;
+}
+.user-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.user-name {
+  font-size: 1rem;
+  margin: 4em;
+  margin-right: 3em;
+}
+.Avatar {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  margin: 3em -2em 0 3em;
+}
