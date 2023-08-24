@@ -23,6 +23,7 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   font-family: var(--font1);
+  box-shadow: 1px 5px var(--grey);
 
   background-color: #ffffff;
 }
@@ -72,15 +73,21 @@ body {
   margin: 3em -2em 0 3em;
 }
 .Res-container {
-  width: 100%;
+  max-width: 95%;
+  flex-wrap: wrap;
   position: fixed;
-  top: 15%;
+  top: 11.5rem;
+  left: 9em;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 5em;
+
   font-family: var(--font1);
   padding: 2em;
   background-color: #ffffff;
+
+  border-radius: 2em 2em 2em 2em;
+  box-shadow: 1px 5px var(--grey);
 }
 #helperdest {
   font-size: 1.5em;
@@ -94,4 +101,175 @@ body {
   width: 3em;
   height: 3em;
   margin: 0.5em;
+}
+#helperback {
+  font-size: 1.5em;
+  font-family: var(--font1);
+}
+#back {
+  width: 15rem;
+  height: 1.5em;
+}
+.station-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 1em 1em 5em;
+}
+#seprator {
+  font-size: 2rem;
+  font-family: var(--font1);
+  margin: 0 1em 0 1em;
+}
+.date {
+  width: 15rem;
+  height: 3em;
+  margin: 0em 0em 0 1em;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: #333333a8 0px 0px 0px 0.025em;
+  border-radius: 0.5em;
+  font-size: 1.25rem;
+  font-family: var(--font1);
+  margin: 0 4em 0 3em;
+  color: #333333a8;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+  margin-left: 8em;
+}
+.btn {
+  background-color: #0c68be;
+  font-family: var(--font1);
+  color: white;
+  font-size: 1.85rem;
+  border-radius: 0.5em;
+  width: 8em;
+  height: 2em;
+  margin: 0.5em 0 0 5em;
+}
+.Flights-container {
+  width: 70rem;
+  background-color: transparent;
+  position: absolute;
+  right: 5em;
+  top: 23em;
+  margin: 5em;
+  z-index: -1 !important;
+}
+.Results {
+  margin: 0;
+  line-height: 0.5em;
+  font: 2rem var(--font1);
+  color: var(--blue);
+  font-family: var(--font1);
+}
+.Flights {
+  width: 70rem;
+  height: fit-content;
+  padding-left: 1em;
+}
+.card-container {
+  display: inline-block;
+  width: 30rem;
+  height: 20rem;
+  margin: 2em;
+
+  background-color: #ffffff;
+  border-radius: 2em 2em 0em 0em;
+  box-shadow: 1px 5px var(--grey);
+}
+.card-container {
+  display: inline-block;
+  grid-template-columns: 25px 25px 25px 25px;
+  grid-template-rows: 25px 25px 25px 25px;
+  grid-template-areas:
+    " . .  company company"
+    ".  . .  ."
+    ".  . .  ."
+    ".  . .  .";
+}
+.company-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5em;
+  margin-top: 3em;
+}
+.company-name {
+  font-size: 1.5rem;
+  font-family: var(--font1);
+  margin: 0 0 0 1em;
+}
+.company-logo {
+  width: 5em;
+  margin-left: 1em;
+}
+.seat {
+  margin: 0.5em;
+  margin-left: 3em;
+  font: 1rem var(--font1);
+}
+.remaining {
+  color: #247559c9;
+  font: 1rem var(--font1);
+  margin: 1em 1em 0 3em;
+}
+.time {
+  font: 1.15rem var(--font1);
+  margin: 0em 1em 0 1em;
+}
+.time-container {
+  font: 1.15rem var(--font1);
+  margin: 0em 1em 0 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.transit {
+  font: 1em var(--font1);
+  display: block;
+  position: relative;
+  left: 5.5em;
+  color: #f6876f;
+}
+.Refundable {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.refundable-button {
+  width: fit-content;
+  height: 2em;
+  margin: -2em 2em 2em 0;
+  background-color: #b1e7d3;
+  color: #247558;
+  font-family: var(--font1);
+  font-size: 1rem;
+  border-radius: 0.5em;
+}
+.price {
+  font-size: 1.825rem;
+  font-family: var(--font1);
+  margin: 0 0 0 1em;
+  color: #0c68be;
+  position: relative;
+  left: 4em;
+  bottom: 1em;
+}
+.book-button {
+  width: 100%;
+  background-color: #0c68be;
+  color: white;
+  font-family: var(--font1);
+  font-size: 1.85rem;
+  border-radius: 0em 0em 0.5em 0.5em;
 }
