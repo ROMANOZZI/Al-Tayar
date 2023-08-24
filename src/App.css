@@ -273,3 +273,139 @@ body {
   font-size: 1.85rem;
   border-radius: 0em 0em 0.5em 0.5em;
 }
+.filter-container {
+  position: fixed;
+  top: 22rem;
+  left: 10rem;
+  height: 60rem;
+  width: 30rem;
+  background-color: #ffffff;
+  border-radius: 2em;
+  box-shadow: 1px 5px var(--grey);
+  margin: 2em;
+  padding: 1em;
+  font-family: var(--font1);
+}
+#filter {
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+  font-size: 1.25rem;
+
+  color: #000000;
+}
+#Reset {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  font-size: 1.25rem;
+
+  color: #f6876f;
+}
+.Slider-container {
+  position: absolute;
+  top: 10em;
+  left: 1.5em;
+  width: 25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#Price {
+  position: absolute;
+  top: -3em;
+  right: 0.5em;
+  font-size: 1.5rem;
+
+  color: #000000;
+}
+.Min-Max {
+  position: absolute;
+  top: 10em;
+  width: 90%;
+  font-size: 1.55rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#Min,
+#Max {
+  position: relative;
+  top: -0.8em;
+  color: var(--blue);
+  left: 1em;
+}
+.Departure-container {
+  position: absolute;
+  top: 20em;
+  left: 1.5em;
+  width: 25rem;
+}
+#Departure {
+  position: absolute;
+
+  right: 0.5em;
+  font-size: 1.5rem;
+
+  color: #000000;
+}
+.Departure {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  width: 100%;
+}
+.Departure-time {
+  display: flex;
+  width: 10em;
+  padding: 1em;
+
+  display: inline-block;
+}
+.Departure-time button {
+  width: 8em;
+  height: 3em;
+  background-color: #0c68be1e;
+  border: 1px solid #72a7da27;
+  color: #0c68be;
+  font-family: var(--font1);
+  font-size: 1rem;
+  border-radius: 0.5em;
+}
+
+.back {
+  position: absolute;
+  top: 3em;
+  left: 2.625em;
+  width: 100%;
+}
+.back-container {
+  position: absolute;
+  top: 33em;
+  left: 2.5em;
+  width: 25rem;
+}
+.back-time {
+  display: flex;
+  width: 10em;
+  padding: 1em;
+
+  display: inline-block;
+}
+.back-time button {
+  width: 8em;
+  height: 3em;
+  background-color: #0c68be1e;
+  border: 1px solid #72a7da27;
+  color: #0c68be;
+  font-family: var(--font1);
+  font-size: 1rem;
+  border-radius: 0.5em;
+}
+#Back {
+  position: absolute;
+  top: -0.5em;
+  right: 1em;
+  font-size: 1.5rem;
+}
